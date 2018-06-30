@@ -19,21 +19,23 @@ function logLove(string) {
 }
 
 var uppercase = "HELLO!"
+uppercase.toUpperCase() === uppercase
  
 var lowercase = 'hello!'
- 
-var greeting1 = "I can't hear you"
-var greeting2 = "YES INDEED!"
-var greeting3 = "I love you, too."
+lowercase.toLowerCase() === lowercase
+
+var mixedCase = 'I love you, too.'
+mixedCase.toUpperCase() === mixedCase
+mixedCase.toLowerCase() === mixedCase
 
 function sayHiToGrandma(string) {
-  if (uppercase.toUpperCase() === uppercase) { // true 
-    return greeting2
-  if (lowercase.toLowerCase() === lowercase) { // true
-    return greeting1
-  if (string.logLove) {
-    return greeting3
-  }
-}
-}
+  if (string.toLowerCase() === string){
+      return 'I can\'t hear you!';
+    }
+    if (string.toUpperCase() === string){
+      return 'YES INDEED!';
+    }
+    if (string === 'I love you, Grandma.'){
+      return 'I love you, too.';
+    }
 }
